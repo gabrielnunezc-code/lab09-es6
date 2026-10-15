@@ -6,7 +6,7 @@ export const estudiantes = [
   { nombre: "Rosa", notas: [19, 17, 20] },
 ];
 
-// Exportación por defecto
+// Exportación por defecto: nuevo estudiante
 const nuevoEstudiante = {
   ...estudiantes[0],
   nombre: "Ana María",

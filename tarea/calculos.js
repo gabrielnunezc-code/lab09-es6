@@ -1,15 +1,12 @@
-// Calcula el promedio de las notas usando rest
 export const promedio = (...notas) => {
   const suma = notas.reduce((total, nota) => total + nota, 0);
-  return suma / notas.length;
+  return notas.length ? suma / notas.length : 0;
 };
 
-// Determina si el estudiante está aprobado
 export const estado = (nota, minima = 13) => {
   return nota >= minima ? "Aprobado" : "Desaprobado";
 };
 
-// Genera el reporte usando desestructuración
 const reporte = ({ nombre, notas }) => {
   const prom = promedio(...notas);
 
